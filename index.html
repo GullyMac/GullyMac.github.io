@@ -1,53 +1,37 @@
-<html>
-<head>
-</head>
-<body>
-<table border="0">
-<tr>
-<th>No.</th><th></th><th>도서명/저자/가격</th><th>책상태</th><th>판매현황</th>
-</tr>
-<tr>
-<td>1</td><td><img src="https://user-images.githubusercontent.com/44144937/112844546-d1af5400-90de-11eb-8f72-3876bf85ee17.jpg" width=100></td><td>윤성우의 열혈 Java 프로그래밍<br>(윤성우)<br>30,000&nbsp;->&nbsp;15,000</td><td>표지접은자국O<br>모서리구김O<br>필기X</td>
-</tr>
-<tr>
-<td>2</td><td><img src="https://user-images.githubusercontent.com/44144937/112844550-d3791780-90de-11eb-81ab-827c3ff62bfa.jpg" width=100></td><td>차세대 웹 프로그래밍<br>(홍성용)<br>26,000&nbsp;->&nbsp;13,000</td><td>표지접은자국O<br>모서리구김O<br>필기X</td>
-</tr>
-<tr>
-<td>3</td><td><img src="https://user-images.githubusercontent.com/44144937/112844556-d411ae00-90de-11eb-981e-db7eeb6722c1.jpg" width=100><td>처음 해보는 Servlet & JSP<br>(오정임)<br>28,000&nbsp;->&nbsp;14,000</td><td>표지접은자국O<br>모서리구김O<br>필기X</td>
-</tr>
-<tr>
-<td>4</td><td><img src="https://user-images.githubusercontent.com/44144937/112844558-d542db00-90de-11eb-8d16-30909a7bffdb.jpg" width=100><td>오라클 SQL과 PL/SQL<br>(서진수 외)<br>32,000&nbsp;->&nbsp;16,000</td><td>표지접은자국O<br>모서리구김O<br>필기X</td>
-</tr>
-<tr>
-<td>5</td><td><img src="https://user-images.githubusercontent.com/44144937/112844561-d5db7180-90de-11eb-82a2-01eaeb47d91a.jpg" width=100><td>파이썬 3.6 프로그래밍<br>(신호철 외)<br>30,000&nbsp;->&nbsp;15,000</td><td>새책</td>
-</tr>
-<tr>
-<td>6</td><td><img src="https://user-images.githubusercontent.com/44144937/112844571-d6740800-90de-11eb-8e73-8d274b3bcbf1.jpg" width=100><td>파이썬으로 데이터 주무르기<br>(민형기)<br>27,500&nbsp;->&nbsp;14,000</td><td>새책</td>
-</tr>
-<tr>
-<td>7</td><td><img src="https://user-images.githubusercontent.com/44144937/112844573-d7a53500-90de-11eb-86ec-14c218ac91fe.jpg" width=100><td>R을 이용한<br>데이터 처리&분석 실무<br>(서민구)<br>36,000&nbsp;->&nbsp;18,000</td><td>새책</td><td>판매완료</td>
-</tr>
-<tr>
-<td>8</td><td><img src="https://user-images.githubusercontent.com/44144937/112844576-d83dcb80-90de-11eb-8e06-341f333e0826.jpg" width=100><td>R라뷰<br>(서진수)<br>32,000&nbsp;->&nbsp;4,000</td><td>새책</td>
-</tr>
-<tr>
-<td>9</td><td><img src="https://user-images.githubusercontent.com/44144937/112844578-d8d66200-90de-11eb-8221-d3d780bcdc64.jpg" width=100><td>텐서플로와 머신러닝으로<br>시작하는 자연어처리<br>(전창욱 외)<br>30,000&nbsp;->&nbsp;15,000</td><td>새책</td>
-</tr>
-<tr>
-<td>10</td><td><img src="https://user-images.githubusercontent.com/44144937/112844583-d96ef880-90de-11eb-957a-62c99eccd5f0.jpg" width=100><td>실전 예제로 배우는 GAN<br>(조시 칼린)<br>25,000&nbsp;->&nbsp;13,000</td><td>새책</td>
-</tr>
-<tr>
-<td>11</td><td><img src="https://user-images.githubusercontent.com/44144937/112844587-da078f00-90de-11eb-842d-d72bea29cec3.jpg" width=100><td>이토록 쉬운 <br>딥러닝을 위한 기초 수학<br>(마스이 도시카츠)<br>28,000&nbsp;->&nbsp;14,000</td><td>새책</td>
-</tr>
-<tr>
-<td>12</td><td><img src="https://user-images.githubusercontent.com/44144937/112844592-daa02580-90de-11eb-90e5-7959ed7ac1af.jpg" width=100><td>밑바닥부터 시작하는 딥러닝<br>(사이토 고키)<br>24,000&nbsp;->&nbsp;12,000</td><td>새책</td><td>판매완료</td>
-</tr>
-<tr>
-<td>13</td><td><img src="https://user-images.githubusercontent.com/44144937/112844593-dbd15280-90de-11eb-99d9-a400c6577c1a.jpg" width=100><td>파이썬 라이브러리를 활용한<br>데이터 분석 2판<br>(웨스 맥키니)<br>35,000&nbsp;->&nbsp;18,000</td><td>표지접은자국O<br>모서리구김X<br>필기X</td><td>판매완료</td>
-</tr>
-<tr>
-<td>14</td><td><img src="https://user-images.githubusercontent.com/44144937/112844596-dc69e900-90de-11eb-91d7-da51965774a8.jpg" width=100><td>파이썬 데이터 분석 입문<br>(클린턴 브라운리)<br>27,000&nbsp;->&nbsp;14,000</td><td>새책</td><td>판매완료</td>
-</tr>
-</table>
-</body>
-</html>
+---
+layout: default
+title: Home
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
